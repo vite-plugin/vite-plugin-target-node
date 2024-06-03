@@ -2,12 +2,14 @@
   "name": "vite-plugin-target",
   "version": "0.1.1",
   "description": "Make Vite support Electron, Node.js, etc.",
-  "main": "index.js",
-  "types": "types",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "types": "./types/index.d.ts",
   "exports": {
     ".": {
       "import": "./index.mjs",
-      "require": "./index.js"
+      "require": "./index.js",
+      "types": "./types/index.d.ts"
     }
   },
   "repository": "https://github.com/vite-plugin/vite-plugin-target.git",
